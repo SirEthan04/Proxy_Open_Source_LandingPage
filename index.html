@@ -10,19 +10,31 @@
 <body>
 
     <header class="navbar">
-        <div class="logo-container">
-            <img src="../images/Logo.png" alt="Logo BodeGo" class="logo-img">
-        </div>
+    <a href="#" class="logo-container" aria-label="Ir al inicio">
+        <img src="assets/images/Logo.png" alt="Logo de BodeGo" class="logo-img">
+    </a>
 
-        <nav class="nav-links">
+    <button class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="navMenu">
+        ☰
+    </button>
+
+    <div class="nav-menu" id="navMenu">
+        <nav class="nav-links" aria-label="Navegación principal">
             <a href="#solucion">Solución</a>
             <a href="#tecnologia">Tecnología</a>
-            <a href="#como-funciona">Como Funciona</a>
-            <a href="#nosotros">Nosotros</a>
+            <a href="#impacto">Impacto</a>
+            <a href="#contacto">Contacto</a>
         </nav>
+
         <div class="nav-action">
-            <a href="#registro" class="btn-primary">Regístrate</a>
+            <a href="#contacto" class="btn-primary">Contáctanos</a>
         </div>
+    </div>
     </header>
 
   
@@ -99,7 +111,7 @@
     </section>
 
 
-    <section class="impact-section">
+    <section id="impacto" class="impact-section">
         <div class="section-title">
             <h2>Impacto</h2>
             <p>Resultados reales medidos en la operatividad de los negocios</p>
@@ -179,5 +191,6 @@
         </div>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
