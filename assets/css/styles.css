@@ -268,22 +268,51 @@ body {
 
 .solution-grid-2x2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-top: 3rem;
+    max-width: 1000px;
+    margin: 3rem auto 0;
 }
 
 .solution-card {
-    background-color: #64748B;
-    color: white;
-    padding: 3rem 2rem;
-    border-radius: 8px;
-    text-align: left;
+    background-color: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 2rem;
+    min-height: 220px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+    border-color: #2563EB;
+}
+
+.solution-number {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #2563EB;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .solution-card h4 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    color: #0F172A;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.solution-card p {
+    color: #64748B;
+    line-height: 1.7;
+}
+.how-it-works .section-title p {
+    color: #64748B;
 }
 
 
@@ -491,6 +520,14 @@ body {
         max-width: 420px;
         width: 100%;
         margin: 0 auto;
+    }
+
+    .solution-grid-2x2 {
+        grid-template-columns: 1fr;
+    }
+
+    .solution-card {
+        min-height: auto;
     }
 
     .contact-form {
