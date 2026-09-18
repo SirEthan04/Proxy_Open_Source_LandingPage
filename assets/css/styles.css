@@ -316,26 +316,68 @@ body {
 }
 
 
+/* IMPACT SECTION */
 .impact-section {
-    background-color: #64748B;
     padding: 5rem 10%;
-    color: white;
-    text-align: center;
+    background-color: #64748B;
+}
+
+.impact-section .section-title h2 {
+    color: #FFFFFF;
+}
+
+.impact-section .section-title p {
+    color: #E2E8F0;
 }
 
 .impact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-top: 3rem;
+    max-width: 1100px;
+    margin: 3rem auto 0;
 }
 
 .impact-card {
-    background-color: #F1F5F9;
+    background-color: #FFFFFF;
+    padding: 2.5rem;
+    border-radius: 16px;
+    border-top: 4px solid #2563EB;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.22);
+}
+
+.impact-label {
+    display: block;
+    color: #64748B;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0.25rem;
+}
+
+.impact-highlight {
+    display: block;
+    color: #2563EB;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.impact-card h3 {
     color: #0F172A;
-    padding: 3rem;
-    border-radius: 8px;
-    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.impact-card p {
+    color: #64748B;
+    line-height: 1.7;
 }
 
 
@@ -528,6 +570,18 @@ body {
 
     .solution-card {
         min-height: auto;
+    }
+
+    .impact-grid {
+    grid-template-columns: 1fr;
+    }
+
+    .impact-card {
+        padding: 2rem;
+    }
+
+    .impact-highlight {
+        font-size: 1.7rem;
     }
 
     .contact-form {
