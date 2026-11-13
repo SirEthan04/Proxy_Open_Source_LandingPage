@@ -745,6 +745,10 @@ a {
     text-align: center;
 }
 
+.about-team-section {
+    background-color: #ffffff;
+}
+
 .pricing-section {
     padding: 7rem 10%;
 
